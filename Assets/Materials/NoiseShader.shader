@@ -1,6 +1,11 @@
 Shader "Unlit/NoiseShader"
 {
-    // no Properties block this time!
+	Properties
+	{
+		_Freq ("Frequency", Float) = 1
+		_Speed ("Speed", Float) = 1
+	}
+
     SubShader
     {
         Pass
@@ -10,11 +15,18 @@ Shader "Unlit/NoiseShader"
             #pragma fragment frag
             // include file that contains UnityObjectToWorldNormal helper function
             #include "UnityCG.cginc"
+			// include noiseSimplex algorithm from https://forum.unity.com/threads/2d-3d-4d-optimised-perlin-noise-cg-hlsl-library-cginc.218372/
+			#include "noiseSimplex.cginc"
+
+			uniform float
+				_Freq,
+				_Speed
+			;
 
             struct v2f {
                 // we'll output world space normal as one of regular ("texcoord") interpolators
-                half3 worldNormal : TEXCOORD0;
                 float4 pos : SV_POSITION;
+				float3 srcPos : TEXCOORD0;
             };
 
             // vertex shader: takes object space normal as input too
@@ -22,20 +34,19 @@ Shader "Unlit/NoiseShader"
             {
                 v2f o;
                 o.pos = UnityObjectToClipPos(vertex);
-                // UnityCG.cginc file contains function to transform
-                // normal from object to world space, use that
-                o.worldNormal = UnityObjectToWorldNormal(normal);
+
+				o.srcPos = mul(unity_ObjectToWorld, vertex).xyz;
+				o.srcPos *= _Freq;
+				o.srcPos.y += _Time.y * _Speed;
+
                 return o;
             }
             
             fixed4 frag (v2f i) : SV_Target
             {
+				float ns = snoise(i.srcPos) / 2 + 0.5f;
+				return float4(ns, ns, ns, 1.0f);
                 fixed4 c = 0;
-                // normal is a 3D vector with xyz components; in -1..1
-                // range. To display it as color, bring the range into 0..1
-                // and put into red, green, blue components
-                c.rgb = i.worldNormal*0.5+0.5;
-                return c;
             }
             ENDCG
         }
