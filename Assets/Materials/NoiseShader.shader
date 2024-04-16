@@ -11,12 +11,15 @@ Shader "Unlit/NoiseShader"
         Pass
         {
             CGPROGRAM
+			// Upgrade NOTE: excluded shader from DX11; has structs without semantics (struct v2f members pos_t)
+			#pragma exclude_renderers d3d11
             #pragma vertex vert
             #pragma fragment frag
             // include file that contains UnityObjectToWorldNormal helper function
             #include "UnityCG.cginc"
 			// include noiseSimplex algorithm from https://forum.unity.com/threads/2d-3d-4d-optimised-perlin-noise-cg-hlsl-library-cginc.218372/
 			#include "noiseSimplex.cginc"
+			#include "fractalNoise.cginc"
 
 			uniform float
 				_Freq,
@@ -26,7 +29,7 @@ Shader "Unlit/NoiseShader"
             struct v2f {
                 // we'll output world space normal as one of regular ("texcoord") interpolators
                 float4 pos : SV_POSITION;
-				float3 srcPos : TEXCOORD0;
+				float4 srcPos : TEXCOORD0;
             };
 
             // vertex shader: takes object space normal as input too
@@ -35,18 +38,19 @@ Shader "Unlit/NoiseShader"
                 v2f o;
                 o.pos = UnityObjectToClipPos(vertex);
 
-				o.srcPos = mul(unity_ObjectToWorld, vertex).xyz;
-				o.srcPos *= _Freq;
-				o.srcPos.y += _Time.y * _Speed;
+				float3 pos = mul(unity_ObjectToWorld, vertex).xyz * _Freq;
+				float t = _Time.y * _Speed;
+
+				o.srcPos = float4(pos, t);
 
                 return o;
             }
             
             fixed4 frag (v2f i) : SV_Target
             {
-				float ns = snoise(i.srcPos) / 2 + 0.5f;
-				return float4(ns, ns, ns, 1.0f);
-                fixed4 c = 0;
+				//float4 pos_t = float4(i.pos.xyz, i.srcPos.y);
+				float test = (fractal_noise(i.srcPos , 4, _Freq, 0.7) + 1.0) * 0.5;
+				return float4(test, test, test, 1.0f);
             }
             ENDCG
         }
