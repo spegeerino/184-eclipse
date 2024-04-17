@@ -6,6 +6,8 @@ Shader "Unlit/NoiseShader"
 		_ssFreq ("Sunspot Frequency", Float) = 0.00001
 		_Speed ("Speed", Float) = 0.05
 		_Radius ("Radius", Float) = 10000
+		_Temp ("Temperature", Float) = 4000
+		_TempTex ("Temperature Texture", 2D) = "white"
 	}
 
     SubShader
@@ -27,8 +29,11 @@ Shader "Unlit/NoiseShader"
 				_Freq,
 				_Speed,
 				_ssFreq,
-				_Radius
+				_Radius,
+				_Temp
 			;
+
+			sampler2D _TempTex;
 
             struct v2f {
                 // we'll output world space normal as one of regular ("texcoord") interpolators
@@ -64,12 +69,15 @@ Shader "Unlit/NoiseShader"
 				float s = 0.3;
 				float t1 = snoise(sPosition * _ssFreq) - s;
 				float t2 = snoise((sPosition + _Radius) * _ssFreq) - s;
-				//float ss = (max(t1, 0.0) * max(t2, 0.0)) * 2.0;
+				float ss = (max(t1, 0.0) * max(t2, 0.0)) * 2.0;
 
 				// Accumulate total noise
-				float total = n;
+				float total = n - ss;
 
-				return float4(total, total, total, 1.0f);
+				// Sample blackbody radiation color from texture
+				float u = (_Temp - 800.0) / 29200.0;
+				half4 color = tex2D(_TempTex, float2(u, 0));
+				return float4(total, total, total, 1) * color;
             }
             ENDCG
         }
