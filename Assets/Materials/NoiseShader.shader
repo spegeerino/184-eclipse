@@ -3,7 +3,9 @@ Shader "Unlit/NoiseShader"
 	Properties
 	{
 		_Freq ("Frequency", Float) = 1
+		_ssFreq ("Sunspot Frequency", Float) = 1
 		_Speed ("Speed", Float) = 1
+		_Radius ("Radius", Float) = 1
 	}
 
     SubShader
@@ -23,7 +25,9 @@ Shader "Unlit/NoiseShader"
 
 			uniform float
 				_Freq,
-				_Speed
+				_Speed,
+				_ssFreq,
+				_Radius
 			;
 
             struct v2f {
@@ -49,8 +53,23 @@ Shader "Unlit/NoiseShader"
             fixed4 frag (v2f i) : SV_Target
             {
 				//float4 pos_t = float4(i.pos.xyz, i.srcPos.y);
-				float test = (fractal_noise(i.srcPos , 4, _Freq, 0.7) + 1.0) * 0.5;
-				return float4(test, test, test, 1.0f);
+				float n = (fractal_noise(i.srcPos , 5, _Freq, 0.7) + 1.0) * 0.5;
+
+				// Get worldspace position
+				float sunspotSpeedModifier = 0.05;
+				float4 sPosition = i.srcPos * _Radius;
+				sPosition.w *= sunspotSpeedModifier;
+
+				// Sunspots
+				float s = 0.3;
+				float t1 = snoise(sPosition * _ssFreq) - s;
+				float t2 = snoise((sPosition + _Radius) * _ssFreq) - s;
+				float ss = (max(t1, 0.0) * max(t2, 0.0)) * 2.0;
+
+				// Accumulate total noise
+				float total = n - ss;
+
+				return float4(total, total, total, 1.0f);
             }
             ENDCG
         }
