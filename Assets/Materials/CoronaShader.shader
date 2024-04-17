@@ -2,71 +2,60 @@ Shader "Unlit/CoronaShader"
 {
 	Properties
 	{
-		_MainTex ("Texture", 2D) = "white" {}
+		_Freq ("Frequency", Float) = 8
+		_ssFreq ("Sunspot Frequency", Float) = 0.00001
+		_Speed ("Speed", Float) = 0.05
+		_Radius ("Radius", Float) = 10000
 	}
-	SubShader
-	{
-		Tags{ "Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Transparent" "DisableBatching" = "True" }
 
-		ZWrite Off
-		Blend SrcAlpha OneMinusSrcAlpha
+    SubShader
+    {
+        Pass
+        {
+            CGPROGRAM
+			// Upgrade NOTE: excluded shader from DX11; has structs without semantics (struct v2f members pos_t)
+			#pragma exclude_renderers d3d11
+            #pragma vertex vert
+            #pragma fragment frag
+            // include file that contains UnityObjectToWorldNormal helper function
+            #include "UnityCG.cginc"
+			// include noiseSimplex algorithm from https://forum.unity.com/threads/2d-3d-4d-optimised-perlin-noise-cg-hlsl-library-cginc.218372/
+			#include "noiseSimplex.cginc"
+			#include "fractalNoise.cginc"
 
-		Pass
-		{
-			CGPROGRAM
-			#pragma vertex vert
-			#pragma fragment frag
+			uniform float
+				_Freq,
+				_Speed,
+				_ssFreq,
+				_Radius
+			;
 
-			#include "UnityCG.cginc"
+            struct v2f {
+                // we'll output world space normal as one of regular ("texcoord") interpolators
+                float4 pos : SV_POSITION;
+				float4 srcPos : TEXCOORD0;
+            };
 
-			struct appdata
-			{
-				float4 vertex : POSITION;
-				float2 uv : TEXCOORD0;
-			};
-
-			struct v2f
-			{
-				float2 uv : TEXCOORD0;
-				float4 pos : SV_POSITION;
-			};
-
-/*
-			v2f vert (float4 vertex : POSITION) {
-				v2f o;
+            // vertex shader: takes object space normal as input too
+            v2f vert (float4 vertex : POSITION, float3 normal : NORMAL)
+            {
+                v2f o;
                 o.pos = UnityObjectToClipPos(vertex);
 
-				float3 pos = mul(unity_ObjectToWorld, vertex).xyz * _Freq;
+				float3 pos = mul(unity_ObjectToWorld, vertex).xyz;
 				float t = _Time.y * _Speed;
 
-			}
-			*/
+				o.srcPos = float4(pos, t);
 
-			v2f vert (appdata v)
-			{
-				v2f o;
-				o.pos = UnityObjectToClipPos(v.vertex);
-				o.uv = v.uv.xy;
-
-				// billboard mesh towards camera
-				float3 vpos = mul((float3x3)unity_ObjectToWorld, v.vertex.xyz);
-				float4 worldCoord = float4(unity_ObjectToWorld._m03, unity_ObjectToWorld._m13, unity_ObjectToWorld._m23, 1);
-				float4 viewPos = mul(UNITY_MATRIX_V, worldCoord) + float4(vpos, 0);
-				float4 outPos = mul(UNITY_MATRIX_P, viewPos);
-
-				o.pos = outPos;
-
-				return o;
-			}
-			
-			fixed4 frag (v2f i) : SV_Target
-			{
-				float dist = length(i.pos.xyz) / 500;
-				//return float4(dist, dist, dist, 1.0);
-				float brightness = (1.0 / (dist * dist) - 0.1) * 0.7;
-				return float4(brightness, brightness, brightness, 1.0);
-			}
-			ENDCG
-		}
-	}
+                return o;
+            }
+            
+            fixed4 frag (v2f i) : SV_Target
+            {
+				float dist = length(i.srcPos.xyz)/100;
+				return float4(dist, dist, dist, 1.0f);
+            }
+            ENDCG
+        }
+    }
 }
