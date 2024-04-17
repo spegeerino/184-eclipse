@@ -14,7 +14,7 @@ Shader "Unlit/NoiseShader"
         {
             CGPROGRAM
 			// Upgrade NOTE: excluded shader from DX11; has structs without semantics (struct v2f members pos_t)
-			#pragma exclude_renderers d3d11
+			// #pragma exclude_renderers d3d11
             #pragma vertex vert
             #pragma fragment frag
             // include file that contains UnityObjectToWorldNormal helper function
@@ -64,10 +64,10 @@ Shader "Unlit/NoiseShader"
 				float s = 0.3;
 				float t1 = snoise(sPosition * _ssFreq) - s;
 				float t2 = snoise((sPosition + _Radius) * _ssFreq) - s;
-				float ss = (max(t1, 0.0) * max(t2, 0.0)) * 2.0;
+				//float ss = (max(t1, 0.0) * max(t2, 0.0)) * 2.0;
 
 				// Accumulate total noise
-				float total = n - ss;
+				float total = n;
 
 				return float4(total, total, total, 1.0f);
             }
