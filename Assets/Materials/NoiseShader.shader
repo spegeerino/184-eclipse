@@ -6,6 +6,8 @@ Shader "Unlit/NoiseShader"
 		_ssFreq ("Sunspot Frequency", Float) = 0.00001
 		_Speed ("Speed", Float) = 0.05
 		_Radius ("Radius", Float) = 10000
+		_Temp ("Temperature", Float) = 4000
+		_TempTex ("Temperature Texture", 2D) = "white"
 	}
 
     SubShader
@@ -14,7 +16,7 @@ Shader "Unlit/NoiseShader"
         {
             CGPROGRAM
 			// Upgrade NOTE: excluded shader from DX11; has structs without semantics (struct v2f members pos_t)
-			#pragma exclude_renderers d3d11
+			// #pragma exclude_renderers d3d11
             #pragma vertex vert
             #pragma fragment frag
             // include file that contains UnityObjectToWorldNormal helper function
@@ -27,8 +29,11 @@ Shader "Unlit/NoiseShader"
 				_Freq,
 				_Speed,
 				_ssFreq,
-				_Radius
+				_Radius,
+				_Temp
 			;
+
+			sampler2D _TempTex;
 
             struct v2f {
                 // we'll output world space normal as one of regular ("texcoord") interpolators
@@ -69,7 +74,10 @@ Shader "Unlit/NoiseShader"
 				// Accumulate total noise
 				float total = n - ss;
 
-				return float4(total, total, total, 1.0f);
+				// Sample blackbody radiation color from texture
+				float u = (_Temp - 800.0) / 29200.0;
+				half4 color = tex2D(_TempTex, float2(u, 0));
+				return float4(total, total, total, 1) * color;
             }
             ENDCG
         }
