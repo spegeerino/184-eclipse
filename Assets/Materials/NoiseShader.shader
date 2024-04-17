@@ -2,10 +2,10 @@ Shader "Unlit/NoiseShader"
 {
 	Properties
 	{
-		_Freq ("Frequency", Float) = 1
-		_ssFreq ("Sunspot Frequency", Float) = 1
-		_Speed ("Speed", Float) = 1
-		_Radius ("Radius", Float) = 1
+		_Freq ("Frequency", Float) = 8
+		_ssFreq ("Sunspot Frequency", Float) = 0.00001
+		_Speed ("Speed", Float) = 0.05
+		_Radius ("Radius", Float) = 10000
 	}
 
     SubShader

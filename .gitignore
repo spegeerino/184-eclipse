@@ -46,5 +46,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-manifest*
-packages-lock*
+
+# Custom
+packages-lock
