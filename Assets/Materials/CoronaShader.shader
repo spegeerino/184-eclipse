@@ -2,10 +2,11 @@ Shader "Unlit/CoronaShader"
 {
 	Properties
 	{
-		_Freq ("Frequency", Float) = 8
-		_ssFreq ("Sunspot Frequency", Float) = 0.00001
-		_Speed ("Speed", Float) = 0.05
-		_Radius ("Radius", Float) = 10000
+		_Freq ("Frequency", Float) = 0.4
+		_Strength ("Strength", Float) = 0.2
+		_Speed ("Speed", Float) = 0.6
+		_Size ("Size", Float) = 0.3
+    _Thickness ("Thickness", Float) = 0.17
 	}
 
     SubShader
@@ -14,7 +15,7 @@ Shader "Unlit/CoronaShader"
         {
             CGPROGRAM
 			// Upgrade NOTE: excluded shader from DX11; has structs without semantics (struct v2f members pos_t)
-			#pragma exclude_renderers d3d11
+			// #pragma exclude_renderers d3d11
             #pragma vertex vert
             #pragma fragment frag
             // include file that contains UnityObjectToWorldNormal helper function
@@ -26,8 +27,9 @@ Shader "Unlit/CoronaShader"
 			uniform float
 				_Freq,
 				_Speed,
-				_ssFreq,
-				_Radius
+				_Strength,
+				_Size,
+        _Thickness
 			;
 
             struct v2f {
@@ -43,7 +45,7 @@ Shader "Unlit/CoronaShader"
                 o.pos = UnityObjectToClipPos(vertex);
 
 				float3 pos = mul(unity_ObjectToWorld, vertex).xyz;
-				float t = _Time.y * _Speed;
+				float t = _Time.y * _Size;
 
 				o.srcPos = float4(pos, t);
 
@@ -52,8 +54,16 @@ Shader "Unlit/CoronaShader"
             
             fixed4 frag (v2f i) : SV_Target
             {
-				float dist = length(i.srcPos.xyz)/100;
-				return float4(dist, dist, dist, 1.0f);
+        float t = (_Time.y - length(i.srcPos.xyz)) * _Speed;
+        float sx = snoise(_Freq * float4(i.srcPos.xyz, t));
+        float sy = snoise(_Freq * float4((i.srcPos.xyz + 2000.0), t));
+        float sz = snoise(_Freq * float4((i.srcPos.xyz + 4000.0), t));
+        float3 jitter = float3(sx,sy,sz) * 0.2; 
+        float3 nJitterDist = normalize(i.srcPos.xyz + jitter);
+        float3 position = i.srcPos.xyz + snoise(float4(nJitterDist, t * _Thickness)/_Thickness) * .3;
+        float dist = length(position + jitter * 2);
+        float b = (_Size/(dist * dist) - 0.1) * _Strength;
+				return float4(b,b,b, 1.0);
             }
             ENDCG
         }
