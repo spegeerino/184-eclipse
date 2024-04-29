@@ -23,16 +23,14 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs:
-    - _TempTex:
-        m_Texture: {fileID: 2800000, guid: 1bfbee0332cbd574b9a1dd2a6f3655e8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+    m_TexEnvs: [{_TempTex: {m_Texture: {fileID: 2800000, guid: 1bfbee0332cbd574b9a1dd2a6f3655e8,
+            type: 3}, m_Scale: {x: 1, y: 1}, m_Offset: {x: 0, y: 0}}}]
     m_Ints: []
     m_Floats:
     - _Freq: 8
-    - _Radius: 10000
+    - _Radius: 31000
     - _Speed: 0.05
+    - _Temp: 4000
     - _Temp: 4200
     - _ssFreq: 0.00001
     m_Colors: []
