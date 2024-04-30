@@ -76,8 +76,11 @@ Shader "Unlit/NoiseShader"
 
 				// Sample blackbody radiation color from texture
 				float u = (_Temp - 800.0) / 29200.0;
-				half4 color = tex2D(_TempTex, float2(u, 0));
-				return float4(total, total, total, 1) * color;
+				float4 color = tex2D(_TempTex, float2(u, 0));
+				// color shifting
+				float4 tempColorShift = float4(_Temp * (0.0534 / 255.0) - (43.0/255.0), _Temp * (0.0628 / 255.0) - (77.0 / 255.0), _Temp * (0.0735/255.0) - (115.0/255.0), 1.0);
+				float4 shiftedColor = color + tempColorShift;
+				return float4(total, total, total, 1) * shiftedColor;
             }
             ENDCG
         }

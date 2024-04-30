@@ -9,10 +9,10 @@ public class CameraMovement : MonoBehaviour
 	Camera mainCamera;
 	Vector4 worldV;
 	public bool active;
+	public float OrbitSpeed;
 
 	public const float ACCEL = 5.0f;
 	public const float ROTATION_SPEED = 45.0f;
-	public const float OrbitSpeed = 45.0f;
 	public const float DAMPING = 0.1f;
 	Vector4 initPos;
 

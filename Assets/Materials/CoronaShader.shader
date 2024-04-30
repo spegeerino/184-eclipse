@@ -8,10 +8,17 @@ Shader "Unlit/CoronaShader"
 		_Size ("Size", Float) = 0.1
     _Thickness ("Thickness", Float) = 1
     _Exponent ("Exponent", Float) = 8
+    _Alpha ("Opacity", Float) = 0.75
 	}
 
     SubShader
     {
+        Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
+        ZWrite Off
+        Blend SrcAlpha OneMinusSrcAlpha
+        Cull off
+        LOD 100
+
         Pass
         {
             CGPROGRAM
@@ -31,7 +38,8 @@ Shader "Unlit/CoronaShader"
 				_Strength,
 				_Size,
         _Thickness,
-        _Exponent
+        _Exponent,
+        _Alpha
 			;
 
             struct v2f {
@@ -79,10 +87,11 @@ Shader "Unlit/CoronaShader"
         float dist = length(position + jitter * 2);
         float b = (_Size/(pow(dist, _Exponent) - pow(0.1, _Exponent))) * _Strength;
         float unExposure = 3.0;
-        float unGamma = 2.0;
+        float unGamma = 3.0;
         b = 1.0 - exp(b * -unExposure); // HDR exposure
         b = pow(b, unGamma);
-				return float4(b,b,b, 0.99);
+        float alpha = 1 - (_Alpha) * (1-b);
+				return float4(b,b,b, b >= 0.0005 ? _Alpha : 0);
             }
             ENDCG
         }
