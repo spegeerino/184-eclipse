@@ -31,10 +31,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Freq: 8
-    - _Radius: 10000
+    - _Radius: 31000
     - _Speed: 0.05
+    - _Temp: 4000
     - _Temp: 4200
     - _ssFreq: 0.00001
-    m_Colors:
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    m_Colors: [{_Color: {r: 0, g: 0, b: 0, a: 1}}]
   m_BuildTextureStacks: []
