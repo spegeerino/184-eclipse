@@ -15,9 +15,10 @@ public class CameraMovement : MonoBehaviour
 	public const float ROTATION_SPEED = 45.0f;
 	public const float DAMPING = 0.1f;
 	Vector4 initPos;
+	Quaternion initRot;
 
 	private enum MovementMode { Orbit = 1, Free = 2 }
-    private Text text;
+    	private Text text;
 	private MovementMode movement = MovementMode.Free;
 	private GameObject sun;
 	// Start is called before the first frame update
@@ -26,6 +27,7 @@ public class CameraMovement : MonoBehaviour
 		mainCamera = Camera.main;
 		active = true;
 		initPos = mainCamera.transform.position;
+		initRot = mainCamera.transform.rotation;
 		sun = GameObject.Find("Sun");
 
 		// Load the Arial font from the Unity Resources folder.
@@ -77,6 +79,7 @@ public class CameraMovement : MonoBehaviour
 			if (Input.GetKeyDown(KeyCode.R))
 			{
 				mainCamera.transform.position = initPos;
+				mainCamera.transform.rotation = initRot;
 			}
 			if (Input.GetKeyDown(KeyCode.Tab)) {
 				if (movement == MovementMode.Free) {
