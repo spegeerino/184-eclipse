@@ -71,7 +71,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Exponent: 6
-    - _Freq: 1
+    - _Freq: 0.42
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -80,14 +80,14 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 10000
-    - _Size: 0.03
+    - _Size: 10.66
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _Speed: 0.1
     - _SrcBlend: 1
-    - _Strength: 1
+    - _Strength: 0.87
     - _Temp: 4000
-    - _Thickness: 0.5
+    - _Thickness: 0.33
     - _UVSec: 0
     - _ZWrite: 1
     - _ssFreq: 0.00001

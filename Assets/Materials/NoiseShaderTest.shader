@@ -11,7 +11,8 @@ Shader "Unlit/NoiseShader"
 	}
 
     SubShader
-    { Pass
+    {
+        Pass
         {
             CGPROGRAM
 			// Upgrade NOTE: excluded shader from DX11; has structs without semantics (struct v2f members pos_t)
@@ -64,22 +65,10 @@ Shader "Unlit/NoiseShader"
 				float4 sPosition = i.srcPos * _Radius;
 				sPosition.w *= sunspotSpeedModifier;
 
-				// Sunspots
-				float s = 0.3;
-				float t1 = snoise(sPosition * _ssFreq) - s;
-				float t2 = snoise((sPosition + _Radius) * _ssFreq) - s;
-				float ss = (max(t1, 0.0) * max(t2, 0.0)) * 2.0;
-
 				// Accumulate total noise
-				float total = n - ss;
+				float total = n;
 
-				// Sample blackbody radiation color from texture
-				float u = (_Temp - 800.0) / 29200.0;
-				float4 color = tex2D(_TempTex, float2(u, 0));
-				// color shifting
-				//float4 tempColorShift = float4(_Temp * (0.0534 / 255.0) - (43.0/255.0), _Temp * (0.0628 / 255.0) - (77.0 / 255.0), _Temp * (0.0735/255.0) - (115.0/255.0), 1.0);
-				float4 shiftedColor = color; //+ tempColorShift;
-				return float4(total, total, total, 1) * shiftedColor;
+				return float4(total, total, total, 1);
             }
             ENDCG
         }
