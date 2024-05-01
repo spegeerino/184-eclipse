@@ -24,6 +24,7 @@ Shader "Unlit/NoiseShader"
 			// include noiseSimplex algorithm from https://forum.unity.com/threads/2d-3d-4d-optimised-perlin-noise-cg-hlsl-library-cginc.218372/
 			#include "noiseSimplex.cginc"
 			#include "fractalNoise.cginc"
+			#include "cellular_noise.cginc"
 
 			uniform float
 				_Freq,
@@ -74,8 +75,15 @@ Shader "Unlit/NoiseShader"
 				// Accumulate total noise
 				float total = n - ss;
 
+				// testing out temperature stuff
+				float2 F = cellular(sPosition.xy / 1700);
+				float facets = 0.1+(F.x-F.y);
+				total = total + max(facets * 0.5, 0);
+
+				float temp = _Temp + facets * 500;
+
 				// Sample blackbody radiation color from texture
-				float u = (_Temp - 800.0) / 29200.0;
+				float u = (temp - 800.0) / 29200.0;
 				half4 color = tex2D(_TempTex, float2(u, 0));
 				return float4(total, total, total, 1) * color;
             }
