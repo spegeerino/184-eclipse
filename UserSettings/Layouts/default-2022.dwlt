@@ -8,19 +8,19 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 20
-    y: 80
-    width: 1472
-    height: 882
+    x: 0
+    y: 64
+    width: 1920
+    height: 933
   m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 6}
+  m_Title: Game
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
@@ -43,12 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1472
-    height: 832
+    width: 1920
+    height: 883
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 47
+  controlID: 37
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,16 +64,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1124
+    x: 1466
     y: 0
-    width: 348
-    height: 832
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
+    width: 454
+    height: 883
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 12}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &4
@@ -93,13 +92,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 277
-    height: 493
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+    width: 362
+    height: 539
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -118,15 +117,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 493
-    width: 1124
-    height: 339
+    y: 539
+    width: 1466
+    height: 344
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 13}
-  - {fileID: 18}
+  - {fileID: 12}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &6
@@ -142,22 +141,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 2}
-  - {fileID: 8}
+  - {fileID: 3}
+  - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1472
-    height: 882
+    width: 1920
+    height: 933
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &7
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,12 +173,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1472
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &8
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,12 +194,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 862
-    width: 1472
+    y: 913
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &9
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,12 +218,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1124
-    height: 832
+    width: 1466
+    height: 883
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 48
+  controlID: 38
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,14 +242,90 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+    y: 30
+    width: 1472
+    height: 832
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 9220
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 10}
+  m_Position:
+    serializedVersion: 2
+    x: 0
     y: 0
-    width: 1124
-    height: 493
+    width: 1183
+    height: 832
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 9331
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 9}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1183
+    height: 756
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 39
---- !u!114 &11
+  controlID: 9332
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 100
+    height: 756
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,19 +340,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 277
+    x: 100
     y: 0
-    width: 847
-    height: 493
+    width: 1083
+    height: 756
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 17}
+  - {fileID: 12}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &12
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,2113 +360,53 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ffb9ccd5681bd841ae77e9e5571f770, type: 3}
-  m_Name: 
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Git for Unity
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
+  m_Children: []
+  m_Position:
     serializedVersion: 2
-    x: 1144
-    y: 110
-    width: 347
-    height: 811
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  progressMessageClearTime: -1
-  notificationClearTime: -1
-  timeSinceLastRotation: -1
-  currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 1
-  changeTab: 5
-  activeTab: 5
-  initProjectView:
-    hasCompletedInitialCheck: 1
-    isUserDataPresent: 1
-    lastCheckUserChangedEvent:
-      updatedTimeString: 2024-04-13T15:37:11.896-07:00
-      cacheType: 8
-  branchesView:
-    treeLocals:
-      IsRemote: 0
-      folders:
-        keys:
-        - Local branches
-        values:
-        - path: Local branches
-          label: Local branches
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: Local branches
-      pathSeparator: /
-      displayRootNode: 1
-      isSelectable: 1
-      isCheckable: 0
-      nodes:
-      - path: Local branches
-        label: Local branches
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      - path: main
-        label: main
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 1
-        treeIsCheckable: 0
-        checkState: 0
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-    treeRemotes:
-      IsRemote: 1
-      folders:
-        keys:
-        - Remote branches
-        values:
-        - path: Remote branches
-          label: Remote branches
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: Remote branches
-      pathSeparator: /
-      displayRootNode: 1
-      isSelectable: 1
-      isCheckable: 0
-      nodes:
-      - path: Remote branches
-        label: Remote branches
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-    mode: 0
-    newBranchName: 
-    scroll: {x: 0, y: 0}
-    disableDelete: 1
-    disableCreate: 1
-    lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2024-04-13T15:47:59.145-07:00
-      cacheType: 2
-    lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2024-04-13T15:49:34.645-07:00
-      cacheType: 1
-    currentBranch:
-      name: main
-      tracking: 
-    currentRemote:
-      name: 
-      url: 
-      login: 
-      user: 
-      host: 
-      function: 0
-      token: 
-    localBranches:
-    - name: main
-      tracking: 
-    remoteBranches: []
-  changesView:
-    currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
-    commitBody: 
-    commitMessage: 
-    currentBranch: main
-    treeScroll: {x: 0, y: 0}
-    treeChanges:
-      assets:
-        keys:
-        - 00000000000000001000000000000000
-        - ccba0e8eab5a54fc2aa06f1892cd9275
-        - 9fc0d4010bbf28b4594072e72b8655ab
-        - 00000000000000006000000000000000
-        - 00000000000000007100000000000000
-        - 00000000000000008000000000000000
-        - 0000000000000000b000000000000000
-        - 0000000000000000c000000000000000
-        - 00000000000000006100000000000000
-        - 00000000000000002000000000000000
-        - 0000000000000000f100000000000000
-        - 00000000000000004100000000000000
-        - 00000000000000005100000000000000
-        - 0000000000000000b100000000000000
-        - 00000000000000004000000000000000
-        - 0000000000000000e100000000000000
-        - 00000000000000009000000000000000
-        - 00000000000000003000000000000000
-        - 00000000000000007000000000000000
-        - 0000000000000000a100000000000000
-        - 0000000000000000d100000000000000
-        - 0000000000000000c100000000000000
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scenes/SampleScene.unity
-          label: SampleScene.unity
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Scenes/SampleScene.unity
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SampleScene.unity
-            projectPath: Assets/Scenes/SampleScene.unity
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/AudioManager.asset
-          label: AudioManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/AudioManager.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/AudioManager.asset
-            projectPath: ProjectSettings/AudioManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/ClusterInputManager.asset
-          label: ClusterInputManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/ClusterInputManager.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ClusterInputManager.asset
-            projectPath: ProjectSettings/ClusterInputManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/DynamicsManager.asset
-          label: DynamicsManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/DynamicsManager.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/DynamicsManager.asset
-            projectPath: ProjectSettings/DynamicsManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/EditorBuildSettings.asset
-          label: EditorBuildSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/EditorBuildSettings.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorBuildSettings.asset
-            projectPath: ProjectSettings/EditorBuildSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/EditorSettings.asset
-          label: EditorSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/EditorSettings.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorSettings.asset
-            projectPath: ProjectSettings/EditorSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/GraphicsSettings.asset
-          label: GraphicsSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/GraphicsSettings.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/GraphicsSettings.asset
-            projectPath: ProjectSettings/GraphicsSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/InputManager.asset
-          label: InputManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/InputManager.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/InputManager.asset
-            projectPath: ProjectSettings/InputManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/MemorySettings.asset
-          label: MemorySettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/MemorySettings.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/MemorySettings.asset
-            projectPath: ProjectSettings/MemorySettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/NavMeshAreas.asset
-          label: NavMeshAreas.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/NavMeshAreas.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/NavMeshAreas.asset
-            projectPath: ProjectSettings/NavMeshAreas.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/Physics2DSettings.asset
-          label: Physics2DSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/Physics2DSettings.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Physics2DSettings.asset
-            projectPath: ProjectSettings/Physics2DSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/PresetManager.asset
-          label: PresetManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/PresetManager.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PresetManager.asset
-            projectPath: ProjectSettings/PresetManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/ProjectSettings.asset
-          label: ProjectSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/ProjectSettings.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectSettings.asset
-            projectPath: ProjectSettings/ProjectSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/ProjectVersion.txt
-          label: ProjectVersion.txt
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/ProjectVersion.txt
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectVersion.txt
-            projectPath: ProjectSettings/ProjectVersion.txt
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/QualitySettings.asset
-          label: QualitySettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/QualitySettings.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/QualitySettings.asset
-            projectPath: ProjectSettings/QualitySettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/TagManager.asset
-          label: TagManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/TagManager.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TagManager.asset
-            projectPath: ProjectSettings/TagManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/TimeManager.asset
-          label: TimeManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/TimeManager.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimeManager.asset
-            projectPath: ProjectSettings/TimeManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/UnityConnectSettings.asset
-          label: UnityConnectSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/UnityConnectSettings.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/UnityConnectSettings.asset
-            projectPath: ProjectSettings/UnityConnectSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/VersionControlSettings.asset
-          label: VersionControlSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/VersionControlSettings.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VersionControlSettings.asset
-            projectPath: ProjectSettings/VersionControlSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings/VFXManager.asset
-          label: VFXManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/VFXManager.asset
-            fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VFXManager.asset
-            projectPath: ProjectSettings/VFXManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-      folders:
-        keys:
-        - Assets
-        - Assets/Scenes
-        - Packages
-        - ProjectSettings
-        - ProjectSettings/Packages
-        - ProjectSettings/Packages/com.unity.testtools.codecoverage
-        - UserSettings
-        - UserSettings/Layouts
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Packages
-          label: Packages
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: ProjectSettings
-          label: ProjectSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: ProjectSettings/Packages
-          label: Packages
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: ProjectSettings/Packages/com.unity.testtools.codecoverage
-          label: com.unity.testtools.codecoverage
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings/Layouts
-          label: Layouts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: 
-      pathSeparator: /
-      displayRootNode: 0
-      isSelectable: 1
-      isCheckable: 1
-      isUsingGlobalSelection: 1
-      nodes:
-      - path: 
-        label: 
-        level: -1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets
-        label: Assets
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Scenes.meta
-        label: Scenes.meta
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Scenes.meta
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes.meta
-          projectPath: Assets/Scenes.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets/Scenes
-        label: Scenes
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Scenes/SampleScene.unity
-        label: SampleScene.unity
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Scenes/SampleScene.unity
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SampleScene.unity
-          projectPath: Assets/Scenes/SampleScene.unity
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets/Scenes/SampleScene.unity.meta
-        label: SampleScene.unity.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Scenes/SampleScene.unity.meta
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SampleScene.unity.meta
-          projectPath: Assets/Scenes/SampleScene.unity.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Packages
-        label: Packages
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Packages/manifest.json
-        label: manifest.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Packages/manifest.json
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/manifest.json
-          projectPath: Packages/manifest.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Packages/packages-lock.json
-        label: packages-lock.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Packages/packages-lock.json
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/packages-lock.json
-          projectPath: Packages/packages-lock.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings
-        label: ProjectSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings/AudioManager.asset
-        label: AudioManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/AudioManager.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/AudioManager.asset
-          projectPath: ProjectSettings/AudioManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/ClusterInputManager.asset
-        label: ClusterInputManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/ClusterInputManager.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ClusterInputManager.asset
-          projectPath: ProjectSettings/ClusterInputManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/DynamicsManager.asset
-        label: DynamicsManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/DynamicsManager.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/DynamicsManager.asset
-          projectPath: ProjectSettings/DynamicsManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/EditorBuildSettings.asset
-        label: EditorBuildSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/EditorBuildSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorBuildSettings.asset
-          projectPath: ProjectSettings/EditorBuildSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/EditorSettings.asset
-        label: EditorSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/EditorSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorSettings.asset
-          projectPath: ProjectSettings/EditorSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/GraphicsSettings.asset
-        label: GraphicsSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/GraphicsSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/GraphicsSettings.asset
-          projectPath: ProjectSettings/GraphicsSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/InputManager.asset
-        label: InputManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/InputManager.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/InputManager.asset
-          projectPath: ProjectSettings/InputManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/MemorySettings.asset
-        label: MemorySettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/MemorySettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/MemorySettings.asset
-          projectPath: ProjectSettings/MemorySettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/NavMeshAreas.asset
-        label: NavMeshAreas.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/NavMeshAreas.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/NavMeshAreas.asset
-          projectPath: ProjectSettings/NavMeshAreas.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/PackageManagerSettings.asset
-        label: PackageManagerSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/PackageManagerSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PackageManagerSettings.asset
-          projectPath: ProjectSettings/PackageManagerSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/Packages
-        label: Packages
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings/Packages/com.unity.testtools.codecoverage
-        label: com.unity.testtools.codecoverage
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-        label: Settings.json
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-          projectPath: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/Physics2DSettings.asset
-        label: Physics2DSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/Physics2DSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Physics2DSettings.asset
-          projectPath: ProjectSettings/Physics2DSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/PresetManager.asset
-        label: PresetManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/PresetManager.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PresetManager.asset
-          projectPath: ProjectSettings/PresetManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/ProjectSettings.asset
-        label: ProjectSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/ProjectSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectSettings.asset
-          projectPath: ProjectSettings/ProjectSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/ProjectVersion.txt
-        label: ProjectVersion.txt
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/ProjectVersion.txt
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectVersion.txt
-          projectPath: ProjectSettings/ProjectVersion.txt
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/QualitySettings.asset
-        label: QualitySettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/QualitySettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/QualitySettings.asset
-          projectPath: ProjectSettings/QualitySettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/TagManager.asset
-        label: TagManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/TagManager.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TagManager.asset
-          projectPath: ProjectSettings/TagManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/TimelineSettings.asset
-        label: TimelineSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/TimelineSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimelineSettings.asset
-          projectPath: ProjectSettings/TimelineSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/TimeManager.asset
-        label: TimeManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/TimeManager.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimeManager.asset
-          projectPath: ProjectSettings/TimeManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/UnityConnectSettings.asset
-        label: UnityConnectSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/UnityConnectSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/UnityConnectSettings.asset
-          projectPath: ProjectSettings/UnityConnectSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/VersionControlSettings.asset
-        label: VersionControlSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/VersionControlSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VersionControlSettings.asset
-          projectPath: ProjectSettings/VersionControlSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/VFXManager.asset
-        label: VFXManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/VFXManager.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VFXManager.asset
-          projectPath: ProjectSettings/VFXManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings/XRSettings.asset
-        label: XRSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/XRSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/XRSettings.asset
-          projectPath: ProjectSettings/XRSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings/EditorUserSettings.asset
-        label: EditorUserSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings/EditorUserSettings.asset
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/EditorUserSettings.asset
-          projectPath: UserSettings/EditorUserSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings/Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings/Layouts/default-2022.dwlt
-        label: default-2022.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings/Layouts/default-2022.dwlt
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Layouts/default-2022.dwlt
-          projectPath: UserSettings/Layouts/default-2022.dwlt
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings/Search.index
-        label: Search.index
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings/Search.index
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.index
-          projectPath: UserSettings/Search.index
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings/Search.settings
-        label: Search.settings
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings/Search.settings
-          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.settings
-          projectPath: UserSettings/Search.settings
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-    gitStatusEntries:
-    - path: Assets/Scenes.meta
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes.meta
-      projectPath: Assets/Scenes.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Scenes/SampleScene.unity
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SampleScene.unity
-      projectPath: Assets/Scenes/SampleScene.unity
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Scenes/SampleScene.unity.meta
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SampleScene.unity.meta
-      projectPath: Assets/Scenes/SampleScene.unity.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Packages/manifest.json
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/manifest.json
-      projectPath: Packages/manifest.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Packages/packages-lock.json
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/packages-lock.json
-      projectPath: Packages/packages-lock.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/AudioManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/AudioManager.asset
-      projectPath: ProjectSettings/AudioManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/ClusterInputManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ClusterInputManager.asset
-      projectPath: ProjectSettings/ClusterInputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/DynamicsManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/DynamicsManager.asset
-      projectPath: ProjectSettings/DynamicsManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/EditorBuildSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorBuildSettings.asset
-      projectPath: ProjectSettings/EditorBuildSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/EditorSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorSettings.asset
-      projectPath: ProjectSettings/EditorSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/GraphicsSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/GraphicsSettings.asset
-      projectPath: ProjectSettings/GraphicsSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/InputManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/InputManager.asset
-      projectPath: ProjectSettings/InputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/MemorySettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/MemorySettings.asset
-      projectPath: ProjectSettings/MemorySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/NavMeshAreas.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/NavMeshAreas.asset
-      projectPath: ProjectSettings/NavMeshAreas.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/PackageManagerSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PackageManagerSettings.asset
-      projectPath: ProjectSettings/PackageManagerSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-      projectPath: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/Physics2DSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Physics2DSettings.asset
-      projectPath: ProjectSettings/Physics2DSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/PresetManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PresetManager.asset
-      projectPath: ProjectSettings/PresetManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/ProjectSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectSettings.asset
-      projectPath: ProjectSettings/ProjectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/ProjectVersion.txt
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectVersion.txt
-      projectPath: ProjectSettings/ProjectVersion.txt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/QualitySettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/QualitySettings.asset
-      projectPath: ProjectSettings/QualitySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/TagManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TagManager.asset
-      projectPath: ProjectSettings/TagManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/TimelineSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimelineSettings.asset
-      projectPath: ProjectSettings/TimelineSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/TimeManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimeManager.asset
-      projectPath: ProjectSettings/TimeManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/UnityConnectSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/UnityConnectSettings.asset
-      projectPath: ProjectSettings/UnityConnectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/VersionControlSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VersionControlSettings.asset
-      projectPath: ProjectSettings/VersionControlSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/VFXManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VFXManager.asset
-      projectPath: ProjectSettings/VFXManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/XRSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/XRSettings.asset
-      projectPath: ProjectSettings/XRSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings/EditorUserSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/EditorUserSettings.asset
-      projectPath: UserSettings/EditorUserSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings/Layouts/default-2022.dwlt
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Layouts/default-2022.dwlt
-      projectPath: UserSettings/Layouts/default-2022.dwlt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings/Search.index
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.index
-      projectPath: UserSettings/Search.index
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings/Search.settings
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.settings
-      projectPath: UserSettings/Search.settings
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    changedFilesText: 32 changed files
-    lastCurrentBranchChangedEvent:
-      updatedTimeString: 2024-04-13T15:49:34.645-07:00
-      cacheType: 1
-    lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-04-13T15:49:36.390-07:00
-      cacheType: 6
-    lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
-      cacheType: 7
-  historyView:
-    currentLogHasUpdate: 0
-    currentTrackingStatusHasUpdate: 0
-    logEntries: []
-    statusAhead: 0
-    lastLogChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
-      cacheType: 3
-    lastTrackingStatusChangedEvent:
-      updatedTimeString: 2024-04-13T15:49:36.391-07:00
-      cacheType: 5
-    historyControl:
-      scroll: {x: 0, y: 0}
-      entries: []
-      statusAhead: 0
-      selectedIndex: -1
-    selectedEntry:
-      commitID: 
-      mergeA: 
-      mergeB: 
-      authorName: 
-      authorEmail: 
-      commitEmail: 
-      commitName: 
-      summary: 
-      description: 
-      timeString: 0001-01-01T00:00:00.000+00:00
-      commitTimeString: 0001-01-01T00:00:00.000+00:00
-      changes: []
-    treeChanges:
-      assets:
-        keys: []
-        values: []
-      folders:
-        keys: []
-        values: []
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: 
-      pathSeparator: /
-      displayRootNode: 0
-      isSelectable: 1
-      isCheckable: 0
-      isUsingGlobalSelection: 0
-      nodes: []
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-    detailsScroll: {x: 0, y: 0}
-  settingsView:
-    gitPathView:
-      gitPath: /usr/local/bin/git
-      gitLfsPath: /run/current-system/sw/bin/git-lfs
-      errorMessage: 
-      resetToBundled: 0
-      resetToSystem: 0
-      changingManually: 0
-      installSettingsHidden: 0
-    hasRemote: 0
-    lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2024-04-13T15:49:34.645-07:00
-      cacheType: 1
-    newRepositoryRemoteUrl: https://github.com/spegeerino/184-eclipse
-    repositoryRemoteName: origin
-    repositoryRemoteUrl: 
-    scroll: {x: 0, y: 0}
-    userSettingsView:
-      gitName: Andrew
-      gitEmail: liu.andrew@berkeley.edu
-      newGitName: Andrew
-      newGitEmail: liu.andrew@berkeley.edu
-      needsSaving: 0
-      lastCheckUserChangedEvent:
-        updatedTimeString: 2024-04-13T15:49:35.289-07:00
-        cacheType: 8
-      configSettingsHidden: 0
-    repositorySettingsHidden: 0
-    generalSettingsHidden: 0
-    debugSettingsHidden: 0
-    uiSceneSettingsHidden: 0
-    uiProjectSettingsHidden: 0
-  locksView:
-    currentRemoteHasUpdate: 1
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
-    keychainHasUpdate: 1
-    locksControl:
-      scroll: {x: 0, y: 0}
-      gitLockEntries: []
-      assets:
-        keys: []
-        values: []
-      gitStatusDictionary:
-        keys: []
-        values: []
-      selectedEntry:
-        gitLock:
-          id: 
-          path: 
-          owner:
-            name: 
-            email: 
-          lockedAtString: 
-        gitFileStatus: 0
-        lockedAt: 1 Jan 0001, 00:00
-    lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2024-04-13T15:49:34.645-07:00
-      cacheType: 1
-    lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
-      cacheType: 7
-    lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-04-13T15:49:36.390-07:00
-      cacheType: 6
-    lockedFiles: []
-    gitStatusEntries:
-    - path: Assets/Scenes.meta
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes.meta
-      projectPath: Assets/Scenes.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Scenes/SampleScene.unity
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SampleScene.unity
-      projectPath: Assets/Scenes/SampleScene.unity
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Scenes/SampleScene.unity.meta
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SampleScene.unity.meta
-      projectPath: Assets/Scenes/SampleScene.unity.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Packages/manifest.json
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/manifest.json
-      projectPath: Packages/manifest.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Packages/packages-lock.json
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/packages-lock.json
-      projectPath: Packages/packages-lock.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/AudioManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/AudioManager.asset
-      projectPath: ProjectSettings/AudioManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/ClusterInputManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ClusterInputManager.asset
-      projectPath: ProjectSettings/ClusterInputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/DynamicsManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/DynamicsManager.asset
-      projectPath: ProjectSettings/DynamicsManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/EditorBuildSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorBuildSettings.asset
-      projectPath: ProjectSettings/EditorBuildSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/EditorSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorSettings.asset
-      projectPath: ProjectSettings/EditorSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/GraphicsSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/GraphicsSettings.asset
-      projectPath: ProjectSettings/GraphicsSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/InputManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/InputManager.asset
-      projectPath: ProjectSettings/InputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/MemorySettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/MemorySettings.asset
-      projectPath: ProjectSettings/MemorySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/NavMeshAreas.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/NavMeshAreas.asset
-      projectPath: ProjectSettings/NavMeshAreas.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/PackageManagerSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PackageManagerSettings.asset
-      projectPath: ProjectSettings/PackageManagerSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-      projectPath: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/Physics2DSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Physics2DSettings.asset
-      projectPath: ProjectSettings/Physics2DSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/PresetManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PresetManager.asset
-      projectPath: ProjectSettings/PresetManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/ProjectSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectSettings.asset
-      projectPath: ProjectSettings/ProjectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/ProjectVersion.txt
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectVersion.txt
-      projectPath: ProjectSettings/ProjectVersion.txt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/QualitySettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/QualitySettings.asset
-      projectPath: ProjectSettings/QualitySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/TagManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TagManager.asset
-      projectPath: ProjectSettings/TagManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/TimelineSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimelineSettings.asset
-      projectPath: ProjectSettings/TimelineSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/TimeManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimeManager.asset
-      projectPath: ProjectSettings/TimeManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/UnityConnectSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/UnityConnectSettings.asset
-      projectPath: ProjectSettings/UnityConnectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/VersionControlSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VersionControlSettings.asset
-      projectPath: ProjectSettings/VersionControlSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/VFXManager.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VFXManager.asset
-      projectPath: ProjectSettings/VFXManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings/XRSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/XRSettings.asset
-      projectPath: ProjectSettings/XRSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings/EditorUserSettings.asset
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/EditorUserSettings.asset
-      projectPath: UserSettings/EditorUserSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings/Layouts/default-2022.dwlt
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Layouts/default-2022.dwlt
-      projectPath: UserSettings/Layouts/default-2022.dwlt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings/Search.index
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.index
-      projectPath: UserSettings/Search.index
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings/Search.settings
-      fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.settings
-      projectPath: UserSettings/Search.settings
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    currentUsername: 
-    unlockFileMenuContent:
-      m_Text: Release Lock
-      m_Image: {fileID: 0}
-      m_Tooltip: 
-    forceUnlockFileMenuContent:
-      m_Text: Release Lock (forced)
-      m_Image: {fileID: 0}
-      m_Tooltip: 
-  hasRemote: 0
-  currentRemoteName: 
-  currentBranch: main
-  currentRemoteUrl: No remote configured
-  statusAhead: 0
-  statusBehind: 0
-  hasItemsToCommit: 1
-  isTrackingRemoteBranch: 0
-  currentBranchContent:
-    m_Text: main
-    m_Image: {fileID: 0}
-    m_Tooltip: Active branch
-  currentRemoteUrlContent:
-    m_Text: No remote configured
-    m_Image: {fileID: 0}
-    m_Tooltip: Add a remote in the Settings tab
-  lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2024-04-13T15:49:34.645-07:00
-    cacheType: 1
-  lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-04-13T15:49:36.391-07:00
-    cacheType: 5
-  lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-04-13T15:51:03.265-07:00
-    cacheType: 6
-  pullButtonContent:
-    m_Text: Pull
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  pushButtonContent:
-    m_Text: Push
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  refreshButtonContent:
-    m_Text: Refresh
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  fetchButtonContent:
-    m_Text: Fetch
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  repositoryProgressValue: 0
-  repositoryProgressMessage: 
-  appManagerProgressValue: 0.9
-  appManagerProgressMessage: 
-  primaryConnectionUsername: 
---- !u!114 &13
+    x: 0
+    y: 756
+    width: 1183
+    height: 76
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1183
+    y: 0
+    width: 289
+    height: 832
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2407,14 +422,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 20
-    y: 603
-    width: 1123
-    height: 318
+    x: 0
+    y: 658
+    width: 1465
+    height: 323
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2436,7 +451,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -2444,16 +459,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse
+  m_LastProjectPath: /home/eddie/School/sp24/cs184-eclipse
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5e5c0000
-    m_LastClickedID: 23646
-    m_ExpandedIDs: 00000000045c000000ca9a3b
+    m_SelectedIDs: 185c0000
+    m_LastClickedID: 23576
+    m_ExpandedIDs: 00000000185c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2469,7 +484,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -2481,7 +496,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000
+    m_ExpandedIDs: 00000000185c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2509,7 +524,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2537,7 +552,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &14
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2553,14 +568,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1144
-    y: 110
-    width: 347
-    height: 811
+    x: 1466
+    y: 119
+    width: 453
+    height: 862
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2584,7 +599,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2600,14 +615,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 20
-    y: 110
-    width: 276
-    height: 472
+    x: 0
+    y: 119
+    width: 361
+    height: 518
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2621,9 +636,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fcebffff
-      m_LastClickedID: 0
-      m_ExpandedIDs: 30fbffff
+      m_SelectedIDs: b0f7ffff
+      m_LastClickedID: -2128
+      m_ExpandedIDs: fcf9ffff32fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2647,7 +662,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &16
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2663,14 +678,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 297
+    x: 120
     y: 110
-    width: 845
-    height: 472
+    width: 1081
+    height: 735
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2685,7 +700,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -161, y: -26}
+      snapOffset: {x: -166, y: -26}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
@@ -2737,7 +752,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 26}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -2958,7 +973,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 48}
+      snapOffset: {x: 48, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
@@ -2977,9 +992,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.9709339, y: -1.2591836, z: 6.531899}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: -0.9709339, y: -1.2591836, z: 6.531899}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -3004,7 +1019,7 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -3020,25 +1035,25 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.07753335, y: 0.87391484, z: -0.14849319, w: -0.45630184}
+    m_Target: {x: 0.09790288, y: -0.27338785, z: 0.02798256, w: 0.9565015}
     speed: 2
-    m_Value: {x: -0.07753335, y: 0.87391484, z: -0.14849319, w: -0.45630184}
+    m_Value: {x: 0.09790268, y: -0.27338728, z: 0.027982505, w: 0.9564995}
   m_Size:
-    m_Target: 5.409629
+    m_Target: 0.76599646
     speed: 2
-    m_Value: 5.409629
+    m_Value: 0.76599646
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.0009141
+    m_SpeedNormalized: 0.5002071
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -3056,7 +1071,70 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &17
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 20
+    y: 110
+    width: 99
+    height: 735
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: be5b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: f4fffeffe093ffffb0e7ffff30fbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4c969a2b90040154d917609493e03593
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3072,14 +1150,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 297.5
+    x: 120
     y: 110
-    width: 844.5
-    height: 471.5
+    width: 1081
+    height: 735
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -3090,13 +1168,15 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
+  m_SerializedViewNames:
+  - UnityEditor.DeviceSimulation.SimulatorWindow
+  m_SerializedViewValues:
+  - /home/eddie/School/sp24/cs184-eclipse/Library/PlayModeViewStates/f1f9a7ae9f4c49a918de24ac04cbb52d
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 844.5, y: 450.5}
+  m_TargetSize: {x: 1081, y: 714}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -3111,10 +1191,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -211.125
-    m_HBaseRangeMax: 211.125
-    m_VBaseRangeMin: -112.625
-    m_VBaseRangeMax: 112.625
+    m_HBaseRangeMin: -270.25
+    m_HBaseRangeMax: 270.25
+    m_VBaseRangeMin: -178.5
+    m_VBaseRangeMax: 178.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -3132,29 +1212,175 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 844.5
-      height: 450.5
+      width: 1081
+      height: 714
     m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 422.25, y: 225.25}
+    m_Translation: {x: 540.5, y: 357}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -211.125
-      y: -112.625
-      width: 422.25
-      height: 225.25
+      x: -270.25
+      y: -178.5
+      width: 540.5
+      height: 357
     m_MinimalGUI: 1
   m_defaultScale: 2
-  m_LastWindowPixelSize: {x: 1689, y: 943}
+  m_LastWindowPixelSize: {x: 2162, y: 1470}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 20
+    y: 866
+    width: 1182
+    height: 55
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Materials
+    m_Globs: []
+    m_OriginalText: 
+    m_ImportLogFlags: 0
+    m_FilterByTypeIntersection: 0
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Materials
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 78}
+    m_SelectedIDs: 1e5c0000
+    m_LastClickedID: 23582
+    m_ExpandedIDs: 00000000185c000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 10}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000185c000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 64
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 207
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3175,9 +1401,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 20
-    y: 602.5
+    y: 603
     width: 1123
-    height: 318.5
+    height: 318
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -3188,3 +1414,1840 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1203
+    y: 110
+    width: 288
+    height: 811
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb9ccd5681bd841ae77e9e5571f770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Git for Unity
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1144
+    y: 110
+    width: 347
+    height: 811
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  progressMessageClearTime: -1
+  notificationClearTime: -1
+  timeSinceLastRotation: -1
+  currentBranchAndRemoteHasUpdate: 0
+  currentTrackingStatusHasUpdate: 0
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 1
+  changeTab: 3
+  activeTab: 3
+  initProjectView:
+    hasCompletedInitialCheck: 0
+    isUserDataPresent: 0
+    lastCheckUserChangedEvent:
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 8
+  branchesView:
+    treeLocals:
+      IsRemote: 0
+      folders:
+        keys:
+        - Local branches
+        values:
+        - path: Local branches
+          label: Local branches
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: Local branches
+      pathSeparator: /
+      displayRootNode: 1
+      isSelectable: 1
+      isCheckable: 0
+      nodes:
+      - path: Local branches
+        label: Local branches
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: main
+        label: main
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 1
+        treeIsCheckable: 0
+        checkState: 0
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+    treeRemotes:
+      IsRemote: 1
+      folders:
+        keys:
+        - Remote branches
+        - origin
+        values:
+        - path: Remote branches
+          label: Remote branches
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+        - path: origin
+          label: origin
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: Remote branches
+      pathSeparator: /
+      displayRootNode: 1
+      isSelectable: 1
+      isCheckable: 0
+      nodes:
+      - path: Remote branches
+        label: Remote branches
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin
+        label: origin
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/main
+        label: main
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+    mode: 0
+    newBranchName: 
+    scroll: {x: 0, y: 0}
+    disableDelete: 1
+    disableCreate: 1
+    lastLocalAndRemoteBranchListChangedEvent:
+      updatedTimeString: 2024-04-16T13:59:31.009-07:00
+      cacheType: 2
+    lastCurrentBranchAndRemoteChange:
+      updatedTimeString: 2024-04-16T16:53:18.619-07:00
+      cacheType: 1
+    currentBranch:
+      name: main
+      tracking: origin/main
+    currentRemote:
+      name: origin
+      url: https://github.com/spegeerino/184-eclipse.git
+      login: 
+      user: 
+      host: 
+      function: 0
+      token: 
+    localBranches:
+    - name: main
+      tracking: origin/main
+    remoteBranches:
+    - name: origin/main
+      tracking: '[None]'
+  changesView:
+    currentBranchHasUpdate: 0
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
+    commitBody: 
+    commitMessage: 
+    currentBranch: main
+    treeScroll: {x: 0, y: 0}
+    treeChanges:
+      assets:
+        keys: []
+        values: []
+      folders:
+        keys: []
+        values: []
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: 
+      pathSeparator: /
+      displayRootNode: 0
+      isSelectable: 1
+      isCheckable: 1
+      isUsingGlobalSelection: 1
+      nodes:
+      - path: 
+        label: 
+        level: -1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+    gitStatusEntries: []
+    changedFilesText: No changed files
+    lastCurrentBranchChangedEvent:
+      updatedTimeString: 2024-04-16T16:53:18.619-07:00
+      cacheType: 1
+    lastStatusEntriesChangedEvent:
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 6
+    lastLocksChangedEvent:
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 7
+  historyView:
+    currentLogHasUpdate: 0
+    currentTrackingStatusHasUpdate: 0
+    logEntries:
+    - commitID: 8768d0336311a336647efbdce1eb3f8ade3be01a
+      mergeA: 
+      mergeB: 
+      authorName: Andrew
+      authorEmail: liu.andrew@berkeley.edu
+      commitEmail: liu.andrew@berkeley.edu
+      commitName: Andrew
+      summary: 'feat: add sunspots(ish)'
+      description: 
+      timeString: 2024-04-16T16:52:10.000-07:00
+      commitTimeString: 2024-04-16T16:52:10.000-07:00
+      changes:
+      - path: .gitignore
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/.gitignore
+        projectPath: .gitignore
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/.gitignore
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/.gitignore
+        projectPath: Assets/.gitignore
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/Materials/NoiseShader.shader
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+        projectPath: Assets/Materials/NoiseShader.shader
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Packages/manifest.json
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/manifest.json
+        projectPath: Packages/manifest.json
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Packages/packages-lock.json
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/packages-lock.json
+        projectPath: Packages/packages-lock.json
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+    - commitID: ebd03e8580e1d620360a03c42bebe2fb4bbf5d52
+      mergeA: 
+      mergeB: 
+      authorName: Andrew
+      authorEmail: liu.andrew@berkeley.edu
+      commitEmail: liu.andrew@berkeley.edu
+      commitName: Andrew
+      summary: 'fix: update gitignore'
+      description: 
+      timeString: 2024-04-16T16:04:51.000-07:00
+      commitTimeString: 2024-04-16T16:04:51.000-07:00
+      changes:
+      - path: Assets/.gitignore
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/.gitignore
+        projectPath: Assets/.gitignore
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: f900ddd7926bf4489e1aff8e9c3b77d4b6a2f8f5
+      mergeA: 
+      mergeB: 
+      authorName: Andrew
+      authorEmail: liu.andrew@berkeley.edu
+      commitEmail: liu.andrew@berkeley.edu
+      commitName: Andrew
+      summary: 'feat: add fractal noise'
+      description: 
+      timeString: 2024-04-16T16:01:06.000-07:00
+      commitTimeString: 2024-04-16T16:01:06.000-07:00
+      changes:
+      - path: Assets/Materials/NoiseShader.shader
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+        projectPath: Assets/Materials/NoiseShader.shader
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/Materials/StandardEmissive.mat
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/StandardEmissive.mat
+        projectPath: Assets/Materials/StandardEmissive.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/Materials/fractalNoise.cginc
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/fractalNoise.cginc
+        projectPath: Assets/Materials/fractalNoise.cginc
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Materials/fractalNoise.cginc.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/fractalNoise.cginc.meta
+        projectPath: Assets/Materials/fractalNoise.cginc.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Materials/noiseSimplex.cginc
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/noiseSimplex.cginc
+        projectPath: Assets/Materials/noiseSimplex.cginc
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/Scenes/MainScene.unity
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/MainScene.unity
+        projectPath: Assets/Scenes/MainScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: edceb4f542de75d494a0e5e612597f9ca36415c5
+      mergeA: 
+      mergeB: 
+      authorName: Aditya Tablet
+      authorEmail: adbaireddy@berkeley.edu
+      commitEmail: adbaireddy@berkeley.edu
+      commitName: Aditya Tablet
+      summary: (feat) add camera movement and test scene
+      description: 
+      timeString: 2024-04-16T12:14:56.000-07:00
+      commitTimeString: 2024-04-16T12:14:56.000-07:00
+      changes:
+      - path: Assets/Materials/StandardEmissive.mat
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/StandardEmissive.mat
+        projectPath: Assets/Materials/StandardEmissive.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/Scenes/TestScene.unity
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/TestScene.unity
+        projectPath: Assets/Scenes/TestScene.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scenes/TestScene.unity.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/TestScene.unity.meta
+        projectPath: Assets/Scenes/TestScene.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scripts/CameraMovement.cs
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/CameraMovement.cs
+        projectPath: Assets/Scripts/CameraMovement.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scripts/CameraMovement.cs.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/CameraMovement.cs.meta
+        projectPath: Assets/Scripts/CameraMovement.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 4b3fc13ead26490ac5c2318b46168a296a94992c
+      mergeA: 
+      mergeB: 
+      authorName: Andrew
+      authorEmail: liu.andrew@berkeley.edu
+      commitEmail: liu.andrew@berkeley.edu
+      commitName: Andrew
+      summary: 'feat: update noise shader'
+      description: include hlsl compatible noise library + basic config
+      timeString: 2024-04-16T11:44:32.000-07:00
+      commitTimeString: 2024-04-16T11:44:32.000-07:00
+      changes:
+      - path: Assets/Materials/NoiseShader.shader
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+        projectPath: Assets/Materials/NoiseShader.shader
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/Materials/noiseSimplex.cginc
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/noiseSimplex.cginc
+        projectPath: Assets/Materials/noiseSimplex.cginc
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Materials/noiseSimplex.cginc.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/noiseSimplex.cginc.meta
+        projectPath: Assets/Materials/noiseSimplex.cginc.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: e1f2a86c38fd0fdf75b94e64feebad1982d45512
+      mergeA: 
+      mergeB: 
+      authorName: Andrew
+      authorEmail: liu.andrew@berkeley.edu
+      commitEmail: liu.andrew@berkeley.edu
+      commitName: Andrew
+      summary: Add basic normal shader
+      description: "Add basic normal shader \u2014 TODO: add noise"
+      timeString: 2024-04-13T17:02:44.000-07:00
+      commitTimeString: 2024-04-13T17:02:44.000-07:00
+      changes:
+      - path: Assets/Materials/NoiseShader.shader
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+        projectPath: Assets/Materials/NoiseShader.shader
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Materials/NoiseShader.shader.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader.meta
+        projectPath: Assets/Materials/NoiseShader.shader.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+        projectPath: UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 78164cfb5b3d4e12fe06c86fe99d11b837dacc60
+      mergeA: 
+      mergeB: 
+      authorName: Andrew
+      authorEmail: liu.andrew@berkeley.edu
+      commitEmail: liu.andrew@berkeley.edu
+      commitName: Andrew
+      summary: Add scripts
+      description: Add scripts
+      timeString: 2024-04-13T16:47:24.000-07:00
+      commitTimeString: 2024-04-13T16:47:24.000-07:00
+      changes:
+      - path: Assets/Scenes/MainScene.unity
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/MainScene.unity
+        projectPath: Assets/Scenes/MainScene.unity
+        originalPath: Assets/Scenes/SunRender.unity
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets/Scenes/MainScene.unity.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/MainScene.unity.meta
+        projectPath: Assets/Scenes/MainScene.unity.meta
+        originalPath: Assets/Scenes/SunRender.unity.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets/Scripts/AtmosphereRenderer.cs
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/AtmosphereRenderer.cs
+        projectPath: Assets/Scripts/AtmosphereRenderer.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scripts/AtmosphereRenderer.cs.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/AtmosphereRenderer.cs.meta
+        projectPath: Assets/Scripts/AtmosphereRenderer.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scripts/BlackbodyRenderer.cs
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/BlackbodyRenderer.cs
+        projectPath: Assets/Scripts/BlackbodyRenderer.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scripts/BlackbodyRenderer.cs.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/BlackbodyRenderer.cs.meta
+        projectPath: Assets/Scripts/BlackbodyRenderer.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 6619b67ec36cd2cc8adc37030da0bb5df8f92c74
+      mergeA: 
+      mergeB: 
+      authorName: Andrew
+      authorEmail: liu.andrew@berkeley.edu
+      commitEmail: liu.andrew@berkeley.edu
+      commitName: Andrew
+      summary: Initial
+      description: Init
+      timeString: 2024-04-13T16:43:05.000-07:00
+      commitTimeString: 2024-04-13T16:43:05.000-07:00
+      changes:
+      - path: Assets/Materials.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials.meta
+        projectPath: Assets/Materials.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Materials/StandardEmissive.mat
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/StandardEmissive.mat
+        projectPath: Assets/Materials/StandardEmissive.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Materials/StandardEmissive.mat.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/StandardEmissive.mat.meta
+        projectPath: Assets/Materials/StandardEmissive.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scenes.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes.meta
+        projectPath: Assets/Scenes.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scenes/SunRender.unity
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SunRender.unity
+        projectPath: Assets/Scenes/SunRender.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scenes/SunRender.unity.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SunRender.unity.meta
+        projectPath: Assets/Scenes/SunRender.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scripts.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts.meta
+        projectPath: Assets/Scripts.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scripts/NoiseTexture.cs
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/NoiseTexture.cs
+        projectPath: Assets/Scripts/NoiseTexture.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Scripts/NoiseTexture.cs.meta
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/NoiseTexture.cs.meta
+        projectPath: Assets/Scripts/NoiseTexture.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages/manifest.json
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/manifest.json
+        projectPath: Packages/manifest.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages/packages-lock.json
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/packages-lock.json
+        projectPath: Packages/packages-lock.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/AudioManager.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/AudioManager.asset
+        projectPath: ProjectSettings/AudioManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/ClusterInputManager.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ClusterInputManager.asset
+        projectPath: ProjectSettings/ClusterInputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/DynamicsManager.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/DynamicsManager.asset
+        projectPath: ProjectSettings/DynamicsManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/EditorBuildSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorBuildSettings.asset
+        projectPath: ProjectSettings/EditorBuildSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/EditorSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorSettings.asset
+        projectPath: ProjectSettings/EditorSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/GraphicsSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/GraphicsSettings.asset
+        projectPath: ProjectSettings/GraphicsSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/InputManager.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/InputManager.asset
+        projectPath: ProjectSettings/InputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/MemorySettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/MemorySettings.asset
+        projectPath: ProjectSettings/MemorySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/NavMeshAreas.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/NavMeshAreas.asset
+        projectPath: ProjectSettings/NavMeshAreas.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/PackageManagerSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PackageManagerSettings.asset
+        projectPath: ProjectSettings/PackageManagerSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+        projectPath: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/Physics2DSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Physics2DSettings.asset
+        projectPath: ProjectSettings/Physics2DSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/PresetManager.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PresetManager.asset
+        projectPath: ProjectSettings/PresetManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/ProjectSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectSettings.asset
+        projectPath: ProjectSettings/ProjectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/ProjectVersion.txt
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectVersion.txt
+        projectPath: ProjectSettings/ProjectVersion.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/QualitySettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/QualitySettings.asset
+        projectPath: ProjectSettings/QualitySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/SceneTemplateSettings.json
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/SceneTemplateSettings.json
+        projectPath: ProjectSettings/SceneTemplateSettings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/TagManager.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TagManager.asset
+        projectPath: ProjectSettings/TagManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/TimeManager.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimeManager.asset
+        projectPath: ProjectSettings/TimeManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/TimelineSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimelineSettings.asset
+        projectPath: ProjectSettings/TimelineSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/UnityConnectSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/UnityConnectSettings.asset
+        projectPath: ProjectSettings/UnityConnectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/VFXManager.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VFXManager.asset
+        projectPath: ProjectSettings/VFXManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/VersionControlSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VersionControlSettings.asset
+        projectPath: ProjectSettings/VersionControlSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/XRSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/XRSettings.asset
+        projectPath: ProjectSettings/XRSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings/EditorUserSettings.asset
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/EditorUserSettings.asset
+        projectPath: UserSettings/EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings/Layouts/default-2022.dwlt
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Layouts/default-2022.dwlt
+        projectPath: UserSettings/Layouts/default-2022.dwlt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings/Search.index
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.index
+        projectPath: UserSettings/Search.index
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings/Search.settings
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.settings
+        projectPath: UserSettings/Search.settings
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 9d3f2ff088641e352caa5816663a5b195453784b
+      mergeA: 
+      mergeB: 
+      authorName: Andrew
+      authorEmail: liu.andrew@berkeley.edu
+      commitEmail: liu.andrew@berkeley.edu
+      commitName: Andrew
+      summary: Initial commit
+      description: 
+      timeString: 2024-04-13T15:37:19.000-07:00
+      commitTimeString: 2024-04-13T15:37:19.000-07:00
+      changes:
+      - path: .gitattributes
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/.gitattributes
+        projectPath: .gitattributes
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: .gitignore
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/.gitignore
+        projectPath: .gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/.gitignore
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/.gitignore
+        projectPath: Assets/.gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    statusAhead: 0
+    lastLogChangedEvent:
+      updatedTimeString: 2024-04-16T17:53:14.475-07:00
+      cacheType: 3
+    lastTrackingStatusChangedEvent:
+      updatedTimeString: 2024-04-16T17:53:14.471-07:00
+      cacheType: 5
+    historyControl:
+      scroll: {x: 0, y: 0}
+      entries:
+      - commitID: 8768d0336311a336647efbdce1eb3f8ade3be01a
+        mergeA: 
+        mergeB: 
+        authorName: Andrew
+        authorEmail: liu.andrew@berkeley.edu
+        commitEmail: liu.andrew@berkeley.edu
+        commitName: Andrew
+        summary: 'feat: add sunspots(ish)'
+        description: 
+        timeString: 2024-04-16T16:52:10.000-07:00
+        commitTimeString: 2024-04-16T16:52:10.000-07:00
+        changes:
+        - path: .gitignore
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/.gitignore
+          projectPath: .gitignore
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/.gitignore
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/.gitignore
+          projectPath: Assets/.gitignore
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/Materials/NoiseShader.shader
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+          projectPath: Assets/Materials/NoiseShader.shader
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Packages/manifest.json
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/manifest.json
+          projectPath: Packages/manifest.json
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Packages/packages-lock.json
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/packages-lock.json
+          projectPath: Packages/packages-lock.json
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+      - commitID: ebd03e8580e1d620360a03c42bebe2fb4bbf5d52
+        mergeA: 
+        mergeB: 
+        authorName: Andrew
+        authorEmail: liu.andrew@berkeley.edu
+        commitEmail: liu.andrew@berkeley.edu
+        commitName: Andrew
+        summary: 'fix: update gitignore'
+        description: 
+        timeString: 2024-04-16T16:04:51.000-07:00
+        commitTimeString: 2024-04-16T16:04:51.000-07:00
+        changes:
+        - path: Assets/.gitignore
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/.gitignore
+          projectPath: Assets/.gitignore
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: f900ddd7926bf4489e1aff8e9c3b77d4b6a2f8f5
+        mergeA: 
+        mergeB: 
+        authorName: Andrew
+        authorEmail: liu.andrew@berkeley.edu
+        commitEmail: liu.andrew@berkeley.edu
+        commitName: Andrew
+        summary: 'feat: add fractal noise'
+        description: 
+        timeString: 2024-04-16T16:01:06.000-07:00
+        commitTimeString: 2024-04-16T16:01:06.000-07:00
+        changes:
+        - path: Assets/Materials/NoiseShader.shader
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+          projectPath: Assets/Materials/NoiseShader.shader
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/Materials/StandardEmissive.mat
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/StandardEmissive.mat
+          projectPath: Assets/Materials/StandardEmissive.mat
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/Materials/fractalNoise.cginc
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/fractalNoise.cginc
+          projectPath: Assets/Materials/fractalNoise.cginc
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Materials/fractalNoise.cginc.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/fractalNoise.cginc.meta
+          projectPath: Assets/Materials/fractalNoise.cginc.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Materials/noiseSimplex.cginc
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/noiseSimplex.cginc
+          projectPath: Assets/Materials/noiseSimplex.cginc
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/Scenes/MainScene.unity
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/MainScene.unity
+          projectPath: Assets/Scenes/MainScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: edceb4f542de75d494a0e5e612597f9ca36415c5
+        mergeA: 
+        mergeB: 
+        authorName: Aditya Tablet
+        authorEmail: adbaireddy@berkeley.edu
+        commitEmail: adbaireddy@berkeley.edu
+        commitName: Aditya Tablet
+        summary: (feat) add camera movement and test scene
+        description: 
+        timeString: 2024-04-16T12:14:56.000-07:00
+        commitTimeString: 2024-04-16T12:14:56.000-07:00
+        changes:
+        - path: Assets/Materials/StandardEmissive.mat
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/StandardEmissive.mat
+          projectPath: Assets/Materials/StandardEmissive.mat
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/Scenes/TestScene.unity
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/TestScene.unity
+          projectPath: Assets/Scenes/TestScene.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scenes/TestScene.unity.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/TestScene.unity.meta
+          projectPath: Assets/Scenes/TestScene.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scripts/CameraMovement.cs
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/CameraMovement.cs
+          projectPath: Assets/Scripts/CameraMovement.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scripts/CameraMovement.cs.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/CameraMovement.cs.meta
+          projectPath: Assets/Scripts/CameraMovement.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 4b3fc13ead26490ac5c2318b46168a296a94992c
+        mergeA: 
+        mergeB: 
+        authorName: Andrew
+        authorEmail: liu.andrew@berkeley.edu
+        commitEmail: liu.andrew@berkeley.edu
+        commitName: Andrew
+        summary: 'feat: update noise shader'
+        description: include hlsl compatible noise library + basic config
+        timeString: 2024-04-16T11:44:32.000-07:00
+        commitTimeString: 2024-04-16T11:44:32.000-07:00
+        changes:
+        - path: Assets/Materials/NoiseShader.shader
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+          projectPath: Assets/Materials/NoiseShader.shader
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/Materials/noiseSimplex.cginc
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/noiseSimplex.cginc
+          projectPath: Assets/Materials/noiseSimplex.cginc
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Materials/noiseSimplex.cginc.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/noiseSimplex.cginc.meta
+          projectPath: Assets/Materials/noiseSimplex.cginc.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: e1f2a86c38fd0fdf75b94e64feebad1982d45512
+        mergeA: 
+        mergeB: 
+        authorName: Andrew
+        authorEmail: liu.andrew@berkeley.edu
+        commitEmail: liu.andrew@berkeley.edu
+        commitName: Andrew
+        summary: Add basic normal shader
+        description: "Add basic normal shader \u2014 TODO: add noise"
+        timeString: 2024-04-13T17:02:44.000-07:00
+        commitTimeString: 2024-04-13T17:02:44.000-07:00
+        changes:
+        - path: Assets/Materials/NoiseShader.shader
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+          projectPath: Assets/Materials/NoiseShader.shader
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Materials/NoiseShader.shader.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader.meta
+          projectPath: Assets/Materials/NoiseShader.shader.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+          projectPath: UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 78164cfb5b3d4e12fe06c86fe99d11b837dacc60
+        mergeA: 
+        mergeB: 
+        authorName: Andrew
+        authorEmail: liu.andrew@berkeley.edu
+        commitEmail: liu.andrew@berkeley.edu
+        commitName: Andrew
+        summary: Add scripts
+        description: Add scripts
+        timeString: 2024-04-13T16:47:24.000-07:00
+        commitTimeString: 2024-04-13T16:47:24.000-07:00
+        changes:
+        - path: Assets/Scenes/MainScene.unity
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/MainScene.unity
+          projectPath: Assets/Scenes/MainScene.unity
+          originalPath: Assets/Scenes/SunRender.unity
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets/Scenes/MainScene.unity.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/MainScene.unity.meta
+          projectPath: Assets/Scenes/MainScene.unity.meta
+          originalPath: Assets/Scenes/SunRender.unity.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets/Scripts/AtmosphereRenderer.cs
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/AtmosphereRenderer.cs
+          projectPath: Assets/Scripts/AtmosphereRenderer.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scripts/AtmosphereRenderer.cs.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/AtmosphereRenderer.cs.meta
+          projectPath: Assets/Scripts/AtmosphereRenderer.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scripts/BlackbodyRenderer.cs
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/BlackbodyRenderer.cs
+          projectPath: Assets/Scripts/BlackbodyRenderer.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scripts/BlackbodyRenderer.cs.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/BlackbodyRenderer.cs.meta
+          projectPath: Assets/Scripts/BlackbodyRenderer.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 6619b67ec36cd2cc8adc37030da0bb5df8f92c74
+        mergeA: 
+        mergeB: 
+        authorName: Andrew
+        authorEmail: liu.andrew@berkeley.edu
+        commitEmail: liu.andrew@berkeley.edu
+        commitName: Andrew
+        summary: Initial
+        description: Init
+        timeString: 2024-04-13T16:43:05.000-07:00
+        commitTimeString: 2024-04-13T16:43:05.000-07:00
+        changes:
+        - path: Assets/Materials.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials.meta
+          projectPath: Assets/Materials.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Materials/StandardEmissive.mat
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/StandardEmissive.mat
+          projectPath: Assets/Materials/StandardEmissive.mat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Materials/StandardEmissive.mat.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/StandardEmissive.mat.meta
+          projectPath: Assets/Materials/StandardEmissive.mat.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scenes.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes.meta
+          projectPath: Assets/Scenes.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scenes/SunRender.unity
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SunRender.unity
+          projectPath: Assets/Scenes/SunRender.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scenes/SunRender.unity.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scenes/SunRender.unity.meta
+          projectPath: Assets/Scenes/SunRender.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scripts.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts.meta
+          projectPath: Assets/Scripts.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scripts/NoiseTexture.cs
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/NoiseTexture.cs
+          projectPath: Assets/Scripts/NoiseTexture.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Scripts/NoiseTexture.cs.meta
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Scripts/NoiseTexture.cs.meta
+          projectPath: Assets/Scripts/NoiseTexture.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages/manifest.json
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/manifest.json
+          projectPath: Packages/manifest.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages/packages-lock.json
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/packages-lock.json
+          projectPath: Packages/packages-lock.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/AudioManager.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/AudioManager.asset
+          projectPath: ProjectSettings/AudioManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/ClusterInputManager.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ClusterInputManager.asset
+          projectPath: ProjectSettings/ClusterInputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/DynamicsManager.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/DynamicsManager.asset
+          projectPath: ProjectSettings/DynamicsManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/EditorBuildSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorBuildSettings.asset
+          projectPath: ProjectSettings/EditorBuildSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/EditorSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/EditorSettings.asset
+          projectPath: ProjectSettings/EditorSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/GraphicsSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/GraphicsSettings.asset
+          projectPath: ProjectSettings/GraphicsSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/InputManager.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/InputManager.asset
+          projectPath: ProjectSettings/InputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/MemorySettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/MemorySettings.asset
+          projectPath: ProjectSettings/MemorySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/NavMeshAreas.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/NavMeshAreas.asset
+          projectPath: ProjectSettings/NavMeshAreas.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/PackageManagerSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PackageManagerSettings.asset
+          projectPath: ProjectSettings/PackageManagerSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+          projectPath: ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/Physics2DSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/Physics2DSettings.asset
+          projectPath: ProjectSettings/Physics2DSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/PresetManager.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/PresetManager.asset
+          projectPath: ProjectSettings/PresetManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/ProjectSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectSettings.asset
+          projectPath: ProjectSettings/ProjectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/ProjectVersion.txt
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/ProjectVersion.txt
+          projectPath: ProjectSettings/ProjectVersion.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/QualitySettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/QualitySettings.asset
+          projectPath: ProjectSettings/QualitySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/SceneTemplateSettings.json
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/SceneTemplateSettings.json
+          projectPath: ProjectSettings/SceneTemplateSettings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/TagManager.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TagManager.asset
+          projectPath: ProjectSettings/TagManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/TimeManager.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimeManager.asset
+          projectPath: ProjectSettings/TimeManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/TimelineSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/TimelineSettings.asset
+          projectPath: ProjectSettings/TimelineSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/UnityConnectSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/UnityConnectSettings.asset
+          projectPath: ProjectSettings/UnityConnectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/VFXManager.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VFXManager.asset
+          projectPath: ProjectSettings/VFXManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/VersionControlSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/VersionControlSettings.asset
+          projectPath: ProjectSettings/VersionControlSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/XRSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/ProjectSettings/XRSettings.asset
+          projectPath: ProjectSettings/XRSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings/EditorUserSettings.asset
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/EditorUserSettings.asset
+          projectPath: UserSettings/EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings/Layouts/default-2022.dwlt
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Layouts/default-2022.dwlt
+          projectPath: UserSettings/Layouts/default-2022.dwlt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings/Search.index
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.index
+          projectPath: UserSettings/Search.index
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings/Search.settings
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/UserSettings/Search.settings
+          projectPath: UserSettings/Search.settings
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 9d3f2ff088641e352caa5816663a5b195453784b
+        mergeA: 
+        mergeB: 
+        authorName: Andrew
+        authorEmail: liu.andrew@berkeley.edu
+        commitEmail: liu.andrew@berkeley.edu
+        commitName: Andrew
+        summary: Initial commit
+        description: 
+        timeString: 2024-04-13T15:37:19.000-07:00
+        commitTimeString: 2024-04-13T15:37:19.000-07:00
+        changes:
+        - path: .gitattributes
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/.gitattributes
+          projectPath: .gitattributes
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: .gitignore
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/.gitignore
+          projectPath: .gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/.gitignore
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/.gitignore
+          projectPath: Assets/.gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      statusAhead: 0
+      selectedIndex: 0
+    selectedEntry:
+      commitID: 8768d0336311a336647efbdce1eb3f8ade3be01a
+      mergeA: 
+      mergeB: 
+      authorName: Andrew
+      authorEmail: liu.andrew@berkeley.edu
+      commitEmail: liu.andrew@berkeley.edu
+      commitName: Andrew
+      summary: 'feat: add sunspots(ish)'
+      description: 
+      timeString: 2024-04-16T16:52:10.000-07:00
+      commitTimeString: 2024-04-16T16:52:10.000-07:00
+      changes:
+      - path: .gitignore
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/.gitignore
+        projectPath: .gitignore
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/.gitignore
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/.gitignore
+        projectPath: Assets/.gitignore
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/Materials/NoiseShader.shader
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+        projectPath: Assets/Materials/NoiseShader.shader
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Packages/manifest.json
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/manifest.json
+        projectPath: Packages/manifest.json
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Packages/packages-lock.json
+        fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/packages-lock.json
+        projectPath: Packages/packages-lock.json
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+    treeChanges:
+      assets:
+        keys: []
+        values: []
+      folders:
+        keys:
+        - Assets
+        - Assets/Materials
+        - Packages
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Materials
+          label: Materials
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages
+          label: Packages
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: 
+      pathSeparator: /
+      displayRootNode: 0
+      isSelectable: 1
+      isCheckable: 0
+      isUsingGlobalSelection: 0
+      nodes:
+      - path: 
+        label: 
+        level: -1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: .gitignore
+        label: .gitignore
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: .gitignore
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/.gitignore
+          projectPath: .gitignore
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets
+        label: Assets
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/.gitignore
+        label: .gitignore
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/.gitignore
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/.gitignore
+          projectPath: Assets/.gitignore
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+      - path: Assets/Materials
+        label: Materials
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Materials/NoiseShader.shader
+        label: NoiseShader.shader
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Materials/NoiseShader.shader
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Assets/Materials/NoiseShader.shader
+          projectPath: Assets/Materials/NoiseShader.shader
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Packages
+        label: Packages
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages/manifest.json
+        label: manifest.json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages/manifest.json
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/manifest.json
+          projectPath: Packages/manifest.json
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+      - path: Packages/packages-lock.json
+        label: packages-lock.json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages/packages-lock.json
+          fullPath: /Users/Andrew/School_Work/Berkeley/CS184/184-eclipse/Packages/packages-lock.json
+          projectPath: Packages/packages-lock.json
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+    detailsScroll: {x: 0, y: 0}
+  settingsView:
+    gitPathView:
+      gitPath: /usr/local/bin/git
+      gitLfsPath: /run/current-system/sw/bin/git-lfs
+      errorMessage: 
+      resetToBundled: 0
+      resetToSystem: 0
+      changingManually: 0
+      installSettingsHidden: 0
+    hasRemote: 1
+    lastCurrentRemoteChangedEvent:
+      updatedTimeString: 2024-04-16T16:53:18.619-07:00
+      cacheType: 1
+    newRepositoryRemoteUrl: https://github.com/spegeerino/184-eclipse.git
+    repositoryRemoteName: origin
+    repositoryRemoteUrl: https://github.com/spegeerino/184-eclipse.git
+    scroll: {x: 0, y: 0}
+    userSettingsView:
+      gitName: Andrew
+      gitEmail: liu.andrew@berkeley.edu
+      newGitName: Andrew
+      newGitEmail: liu.andrew@berkeley.edu
+      needsSaving: 0
+      lastCheckUserChangedEvent:
+        updatedTimeString: 0001-01-01T00:00:00.000+00:00
+        cacheType: 8
+      configSettingsHidden: 0
+    repositorySettingsHidden: 0
+    generalSettingsHidden: 0
+    debugSettingsHidden: 0
+    uiSceneSettingsHidden: 0
+    uiProjectSettingsHidden: 0
+  locksView:
+    currentRemoteHasUpdate: 1
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
+    keychainHasUpdate: 1
+    locksControl:
+      scroll: {x: 0, y: 0}
+      gitLockEntries: []
+      assets:
+        keys: []
+        values: []
+      gitStatusDictionary:
+        keys: []
+        values: []
+      selectedEntry:
+        gitLock:
+          id: 
+          path: 
+          owner:
+            name: 
+            email: 
+          lockedAtString: 
+        gitFileStatus: 0
+        lockedAt: 1 Jan 0001, 00:00
+    lastCurrentRemoteChangedEvent:
+      updatedTimeString: 2024-04-16T16:53:18.619-07:00
+      cacheType: 1
+    lastLocksChangedEvent:
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 7
+    lastStatusEntriesChangedEvent:
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 6
+    lockedFiles: []
+    gitStatusEntries: []
+    currentUsername: 
+    unlockFileMenuContent:
+      m_Text: Release Lock
+      m_Image: {fileID: 0}
+      m_Tooltip: 
+    forceUnlockFileMenuContent:
+      m_Text: Release Lock (forced)
+      m_Image: {fileID: 0}
+      m_Tooltip: 
+  hasRemote: 1
+  currentRemoteName: origin
+  currentBranch: main
+  currentRemoteUrl: https://github.com/spegeerino/184-eclipse.git
+  statusAhead: 0
+  statusBehind: 0
+  hasItemsToCommit: 0
+  isTrackingRemoteBranch: 1
+  currentBranchContent:
+    m_Text: main
+    m_Image: {fileID: 0}
+    m_Tooltip: Active branch
+  currentRemoteUrlContent:
+    m_Text: https://github.com/spegeerino/184-eclipse.git
+    m_Image: {fileID: 0}
+    m_Tooltip: Url of the origin remote
+  lastCurrentBranchAndRemoteChangedEvent:
+    updatedTimeString: 2024-04-16T16:53:18.619-07:00
+    cacheType: 1
+  lastTrackingStatusChangedEvent:
+    updatedTimeString: 2024-04-16T17:53:14.471-07:00
+    cacheType: 5
+  lastStatusEntriesChangedEvent:
+    updatedTimeString: 0001-01-01T00:00:00.000+00:00
+    cacheType: 6
+  pullButtonContent:
+    m_Text: Pull
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  pushButtonContent:
+    m_Text: Push
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  refreshButtonContent:
+    m_Text: Refresh
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  fetchButtonContent:
+    m_Text: Fetch
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  repositoryProgressValue: 0
+  repositoryProgressMessage: 
+  appManagerProgressValue: 0.9
+  appManagerProgressMessage: 
+  primaryConnectionUsername: 
