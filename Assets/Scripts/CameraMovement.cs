@@ -108,6 +108,23 @@ public class CameraMovement : MonoBehaviour
 		{
 			worldV += mainCamera.cameraToWorldMatrix * Vector3.forward * ACCEL * dt;
 		}
+		if (Input.GetKey(KeyCode.M))
+		{
+			if (OrbitSpeed < 50) {
+				OrbitSpeed += 0.05f;
+			} if (OrbitSpeed >= 50) {
+				OrbitSpeed = 50f;
+			}
+		}
+		if (Input.GetKey(KeyCode.N))
+		{
+			if (OrbitSpeed > 0) {
+				OrbitSpeed -= 0.05f;
+			} else {
+				OrbitSpeed = 0f;
+			}
+		}
+		text.text = "Orbit Movement\nSpeed: " + OrbitSpeed;
 
 		// update position 
 		Vector3 worldV3 = new Vector3(worldV.x, worldV.y, worldV.z);
